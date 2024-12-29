@@ -1,8 +1,30 @@
 @charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --primary-azul: #81cdff; 
+    --primary-lilasclaro: #a772ff;
+    --primary-lilasescuro: #641bdd;
+    --secundary-aqua: #b1c86f;  
+    --secundary-verde: #71c4b0;  
+    --claro: #fcfcfc;
+    --escuro: #4a4a4a;
+
+    --gap: 3rem;
+}
+
+.grad1{
+    background: linear-gradient(45deg, var(--primary-azul), var(--primary-lilasclaro), var(--primary-lilasescuro));
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -16,15 +38,19 @@ body {
 header, nav, main, aside, footer{
     display: flex;
     margin: 3px;
-    background: #a1a1a1;
 }
 
 header {
+    
     flex: 1 1 100vw;
     height: 70px;
 }
+
 header #logo {
     flex: 0 1 200px;
+    margin-left: 15px;
+    ;
+    
 }
 
 #openMenu, #closeMenu {
@@ -49,14 +75,23 @@ nav a {
 
 main {
     display: block;
-    /* flex: 20 1 500px; */
+     flex: 20 1 500px; 
     height: calc(100vh - 224px);
 }
 
 h1{
-    display: block;
-    box-sizing: border-box;
+    font: inherit;
+    font-family: 'Roboto', Arial, sans-serif;
+        font-size:  35px;
 }
+
+h2{
+    
+    font: inherit;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size:  20px;
+}
+
 aside {
     flex: 1 1 200px;
 }
