@@ -21,11 +21,10 @@ header, nav, main, aside, footer{
 
 header {
     flex: 1 1 100vw;
-    height: 100px;
+    height: 70px;
 }
 header #logo {
     flex: 0 1 200px;
-    background: #c9c9c9;
 }
 
 #openMenu, #closeMenu {
@@ -49,7 +48,8 @@ nav a {
 }
 
 main {
-    flex: 20 1 500px;
+    display: block;
+    /* flex: 20 1 500px; */
     height: calc(100vh - 224px);
 }
 
