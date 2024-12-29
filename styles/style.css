@@ -41,16 +41,22 @@ header, nav, main, aside, footer{
 }
 
 header {
-    
     flex: 1 1 100vw;
     height: 70px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin: 0;
+    
 }
 
 header #logo {
     flex: 0 1 200px;
     margin-left: 15px;
-    ;
-    
+    align-self: center;
+    height: 70px;
+    width: 100px;
+    display: flex;
+    align-items: center;
 }
 
 #openMenu, #closeMenu {
