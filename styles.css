@@ -40,6 +40,11 @@ header {
     color: var(--claro);
     padding: 1rem 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3; /* Certifique-se de que o header está acima de outros elementos */
+        
 }
 
 .div-img-logo{
@@ -65,13 +70,12 @@ header nav {
     align-items: center;
     justify-content: flex-end;
     padding-top: 25px;
-
-    /* margin-left: auto;
+    margin-left: auto;
     list-style: none;
     display: flex;
-    gap: 2rem;
     padding-right: 20px;
-    align-items: center; */
+    gap: 2rem;
+    
 }
 
 header nav ul {
@@ -98,6 +102,7 @@ header nav ul li a:hover {
     padding: 0px 5px 0px 5px;
     cursor: pointer;
     display: none;
+    margin-right: 15px;
 }
 
 /* Seções principais */
@@ -326,6 +331,7 @@ footer #contato a {
         transition: 0.3s;
         border-radius: 20px;
         z-index: 2;
+        gap: 0;
     }
 
     nav.show {
