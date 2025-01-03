@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --primary-azul: #81cdff;
+    --primary-lilasclaro: #a772ff;
+    --primary-lilasescuro: #641bdd;
+    --secundary-aqua: #b1c86f;
+    --secundary-verde: #71c4b0;
+    --claro: #fcfcfc;
+    --escuro: #4a4a4a;
+
+    --gap: 3rem;
+    --font1: 'Roboto', Arial, sans-serif;
+}
+
+.grad1{
+    background: linear-gradient(65deg, var(--primary-azul), var(--primary-lilasclaro), var(--primary-lilasescuro));
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configurações gerais */
+body {
+    font-family: var(--font1);
+    background-color: var(--claro);
+    color: var(--escuro);
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    height: 70px;
+    display: flex;
+    background-color: var(--primary-lilasescuro);
+    color: var(--claro);
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.div-img-logo{
+  display: flex;
+  padding-left: 20px;
+    
+}
+
+
+header nav {
+    margin-left: auto;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    padding-right: 20px;
+}
+
+header nav ul li a {
+    color: var(--claro);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: var(--escuro);
+}
+
+/* Seções principais */
+section {
+    padding: var(--gap);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    margin-bottom: 1rem;
+    color: var(--primary-lilasescuro);
+}
+
+p {
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+#inicio {
+    position: relative;
+    height:25vh; /* Ajuste conforme necessário */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--claro);
+    overflow: hidden; /* Adicionado para garantir que o vídeo não ultrapasse a seção */
+}
+
+#section-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Coloca o vídeo atrás do conteúdo da seção */
+}
+
+#inicio .content {
+    position: relative;
+    z-index: 1; /* Garante que o conteúdo fique acima do vídeo */
+    text-align: center;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para melhor legibilidade */
+    border-radius: 10px;
+}
+
+
+/* Blog & Artigos */
+#blog article {
+    border: 1px solid var(--secundary-aqua);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: var(--claro);
+}
+
+#blog article a {
+    color: var(--primary-lilasescuro);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#blog article a:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--primary-lilasclaro);
+    color: var(--claro);
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+footer ul li a {
+    color: var(--claro);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: var(--primary-azul);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    section {
+        padding: 1.5rem;
+    }
+
+    footer ul {
+        flex-direction: column;
+    }
+}
