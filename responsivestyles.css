@@ -13,19 +13,27 @@
         top: 15px;
     }
 
-    nav{
+    nav {
         position: fixed;
         flex-direction: column;
         width: 70vw;
         height: 40vh;
-        background: rgba(255,255,255, 0.8);
+        background: rgba(255, 255, 255, 0.8);
         align-items: center;
         justify-content: center;
         margin: 0;
         display: none;
-        opacity: 0;
-        transition: 0.3s;
+        opacity: 0.5;
+        transition: opacity 0.3s ease;
         border-radius: 20px;
+    }
+
+
+    #menu a {
+        color: black;
+        font-size: 1.5rem;
+        margin: 1rem;
+        z-index: 2;
     }
 
 }

@@ -55,11 +55,18 @@ header {
 
 .div-img-logo img {
     max-width: 100%;
-    height: 60px;
+    height: 50px;
+    margin: 10px;    
+
 }
 
 header nav {
     margin-left: auto;
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    padding-right: 20px;
+    align-items: center;
 }
 
 header nav ul {
@@ -112,12 +119,13 @@ ul li {
 }
 #inicio {
     position: relative;
-    height:400px; /* Ajuste conforme necessário */
+    height:500px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--claro);
-    overflow: hidden; /* Adicionado para garantir que o vídeo não ultrapasse a seção */
+    overflow: hidden; /* garantir que o vídeo não ultrapasse a seção */
+    padding: 0px ;
 }
 
 #section-video {
@@ -130,15 +138,31 @@ ul li {
     z-index: -1; /* Coloca o vídeo atrás do conteúdo da seção */
 }
 .inicio-content {
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     z-index: 1; /* Garante que o conteúdo fique acima do vídeo */
-    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 3rem;
+    margin: 0;
+    height: 100%;
 }
 .inicio-content h1{
+    line-height: 1.2;
     color: var(--claro);
     font-size: 3rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+
+.inicio-content p {
+    color: var(--claro);
+    font-size: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding-left: 40%;
+    text-align: justify;
+}
+
 /* Blog & Artigos */
 #blog article {
     border: 1px solid var(--secundary-aqua);
@@ -209,6 +233,90 @@ footer #contato a {
 
 .copy {  
     text-align: center;
-margin: 5px;}
+    margin: 5px;
+    font-size: 0.8rem;
+}
 
 
+@media only screen and  (max-width: 717px) {
+   
+    #menu a {
+        display: block;
+        color: black;
+        font-size: 1.3rem;
+        
+        padding: 5px;
+    }
+
+    #inicio {
+        position: relative;
+        height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--claro);
+        overflow: hidden; /* garantir que o vídeo não ultrapasse a seção */
+        padding: 0px ;
+    }
+
+    .inicio-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1; /* Garante que o conteúdo fique acima do vídeo */
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 1rem;
+        margin: 0;
+        height: 100%;
+    }
+
+    .inicio-content h1{
+        line-height: 1.2;
+        color: var(--claro);
+        font-size: 2.5rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        text-align: center;
+    }
+    
+    .inicio-content p { 
+        color: var(--claro);
+        font-size: 1rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        padding: 0;
+        margin-top: 15px;
+        text-align: justify;
+    }
+
+    #openMenu, #closeMenu {
+        display: block;
+    }
+
+    #openMenu{
+        margin-left: auto;
+        margin-right: 20px;
+        color: var(--claro);
+    }
+
+    #closeMenu{
+        position: fixed;
+        right: 15px;
+        top: 20px;
+    }
+
+    nav{
+        position: fixed;
+        flex-direction: column;
+        width: 50vw;
+        height: 40vh;
+        background: rgba(255,255,255, 0.95);
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        display: none;
+        opacity: 0;
+        transition: 0.3s;
+        border-radius: 20px;
+        z-index: 2;
+    }
+}

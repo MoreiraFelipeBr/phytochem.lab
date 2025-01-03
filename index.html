@@ -8,7 +8,7 @@
     <meta name="keywords" content="PhytoChem, pesquisa, desenvolvimento, produtos naturais, fitoterápicos, controle de qualidade, estabilidade, consultoria">
     <link rel="canonical" href="https://phytochem.com.br/">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="responsivestyles.css">
+    
 
 </head>
 
@@ -17,19 +17,27 @@
     <header class="grad1">
         <div class="div-img-logo" >
             <a href="index.html">
-                <img src="img/logo.png" alt="PhytoChem Logo">
+                <img src="img/logo.png" alt="PhytoChem Logo"></a>
         </div>
 
         <button id="openMenu">&#9776</button>
+
         <nav id="menu">
-            <button id="closeMenu">X</button>
-            <ul>
+
+            <button id="closeMenu" style="font-size: 2rem;">X</button>
+                        
+            <a href="#">Início</a>
+            <a href="#">Sobre</a>
+            <a href="#">Serviços</a>
+            <a href="#">Contato</a>
+
+            <!-- <ul>
                 <li><a href="#inicio">Início</a></li>
                 <li><a href="#sobre-nos">Sobre Nós</a></li>
                 <li><a href="#servicos">Serviços</a></li>
                 <li><a href="#contato">Contato</a></li>
                 <li><a href="#blog">Blog</a></li>
-            </ul>
+            </ul> -->
         </nav>
     </header>
 
@@ -153,16 +161,35 @@
             </ul>
         </section> -->
        
-        
-        
+            <p class="copy">&copy; 2025 Todos os direitos reservados. Desenvolvido por <a href="https://commit.dev.br/"> Commit.dev</a>
+            </p>
 
-      
-        
-        
-        <p class="copy">&copy; 2025 Todos os direitos reservados. Desenvolvido por <a href="https://commit.dev.br/">Commit.dev</a>.</p>
     </footer>
 
-    <script type="text/javascript" src="script.js" >
+    <script type="text/javascript">
+
+        openMenu.addEventListener('click', () => {
+            menu.style.display = 'flex'
+
+            menu.style.right = (menu.offsetWidth * -1) + 'px' 
+            setTimeout(() => {
+                menu.style.opacity = 1
+
+                menu.style.right = '0'
+            }, 10)
+            
+        })
+
+        closeMenu.addEventListener('click', () => {
+            menu.style.opacity = '0'
+            menu.style.right = (menu.offsetWidth * -1) + 'px' 
+
+            setTimeout(() => {
+                menu.removeAttribute('style')
+            }, 200)
+            
+        })
+
     </script>
 
 </body>
