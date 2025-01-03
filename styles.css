@@ -99,7 +99,7 @@ ul li {
 
 #inicio {
     position: relative;
-    height:25vh; /* Ajuste conforme necessário */
+    height:400px; /* Ajuste conforme necessário */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -117,13 +117,15 @@ ul li {
     z-index: -1; /* Coloca o vídeo atrás do conteúdo da seção */
 }
 
-#inicio .content {
+.inicio-content {
     position: relative;
     z-index: 1; /* Garante que o conteúdo fique acima do vídeo */
     text-align: center;
-    padding: 2rem;
-    background: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para melhor legibilidade */
-    border-radius: 10px;
+}
+.inicio-content h1{
+    color: var(--claro);
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 
