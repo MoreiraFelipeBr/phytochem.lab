@@ -61,12 +61,17 @@ header {
 }
 
 header nav {
-    margin-left: auto;
+    flex: 1 1 100vw;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 25px;
+
+    /* margin-left: auto;
     list-style: none;
     display: flex;
     gap: 2rem;
     padding-right: 20px;
-    align-items: center;
+    align-items: center; */
 }
 
 header nav ul {
@@ -290,18 +295,21 @@ footer #contato a {
 
     #openMenu, #closeMenu {
         display: block;
+        
     }
 
     #openMenu{
         margin-left: auto;
         margin-right: 20px;
         color: var(--claro);
+        cursor: pointer; 
     }
 
     #closeMenu{
         position: fixed;
         right: 15px;
         top: 20px;
+        cursor: pointer; 
     }
 
     nav{
@@ -317,6 +325,18 @@ footer #contato a {
         opacity: 0;
         transition: 0.3s;
         border-radius: 20px;
+        z-index: 2;
+    }
+
+    nav.show {
+        display: flex; /* Mostra o menu quando a classe 'active' é adicionada */
+        opacity: 1;
+    }
+
+    #menu a {
+        color: black;
+        font-size: 1.5rem;
+        margin: 1rem;
         z-index: 2;
     }
 }
