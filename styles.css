@@ -26,6 +26,7 @@
 
 /* Configurações gerais */
 body {
+    margin-top: 70px; /* Para não sobrepor o conteúdo ao header */
     font-family: var(--font1);
     background-color: var(--claro);
     color: var(--escuro);
