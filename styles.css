@@ -37,7 +37,7 @@ body {
 header {
     height: 70px;
     display: flex;
-    background-color: var(--primary-lilasescuro);
+    background-color: var(--escuro);
     color: var(--claro);
     padding: 1rem 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -74,9 +74,9 @@ header nav {
     list-style: none;
     display: flex;
     padding-right: 20px;
-    margin: auto;
+    margin: auto 20px auto auto;
     gap: 1rem;
-    
+    justify-content: flex-end;
 }
 
 header nav ul {
@@ -154,7 +154,7 @@ ul li {
     justify-content: center;
     align-items: center;
     z-index: 1; /* Garante que o conteúdo fique acima do vídeo */
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.2);
     padding: 3rem;
     margin: 0;
     height: 100%;
@@ -198,18 +198,19 @@ ul li {
     flex: 1 1 200px;
     margin: 20px;
     max-width: 400px;
+    
+  
 
 }
 
 .container-bloco{
-    border: 5px solid black;
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
-    padding: 5px;
     margin: 0px;
     border-radius: 20px;
     height: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .img-service {
@@ -218,9 +219,11 @@ ul li {
     object-fit: cover;
     margin: 0 auto;
     justify-content: center;
+    padding: 0px;
 }
 
 .txt-service {
+    padding: 5px;
     text-align: center;
     color: var(--escuro);
 }
