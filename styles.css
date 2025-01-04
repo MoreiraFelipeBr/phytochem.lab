@@ -221,10 +221,13 @@ ul li {
 }
 
 .txt-service {
-    padding: 1rem;
-    background-color: var(--claro);
     text-align: center;
     color: var(--escuro);
+}
+
+.txt-service  p {
+    color: black;
+    list-style: none;
 }
 
 
