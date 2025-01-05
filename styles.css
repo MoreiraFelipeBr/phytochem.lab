@@ -39,7 +39,7 @@ header {
     display: flex;
     background-color: var(--escuro);
     color: var(--claro);
-    padding: 1rem 0;
+    padding: 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: fixed;
     top: 0;
@@ -48,9 +48,20 @@ header {
         
 }
 
-.div-img-logo{
-  display: flex;
-  padding-left: 20px;
+.container-header{
+    display: flex;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+.div-img-logo {
+    padding-left: 20px;
+    align-items: left;
+    text-align: left;
+
     
 }
 
