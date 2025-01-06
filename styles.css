@@ -188,6 +188,36 @@ ul li {
 }
 
 /* SERVIÇOS */
+/* CSSS flexbox */
+
+.servicos {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.caixa-serv {
+    flex: 1 1 200px;
+    margin: 10px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.img-serv {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.txtserv {
+    color: black;
+    list-style: none;
+}
+
+
+
+/* FIM SERVIÇOS CSSS flexbox */
 
 
 .section-service {
