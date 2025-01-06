@@ -176,13 +176,13 @@ header nav ul li a:hover {
 .inicio-content h1{
     line-height: 1.2;
     color: var(--claro);
-    font-size: 3rem;
+    font-size: 4rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .inicio-content p {
     color: var(--claro);
-    font-size: 1rem;
+    font-size: 1.6rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     padding-left: 40%;
     text-align: justify;
