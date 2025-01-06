@@ -31,6 +31,7 @@ body {
     background-color: var(--claro);
     color: var(--escuro);
     line-height: 1.6;
+    width: 100%;
 }
 
 /* Cabeçalho */
@@ -44,7 +45,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 3; /* Certifique-se de que o header está acima de outros elementos */
+    z-index: 3; 
         
 }
 
@@ -120,9 +121,10 @@ header nav ul li a:hover {
 /* Seções principais */
 section {
     padding: var(--gap);
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
 }
+
 h1, h2, h3 {
     margin-bottom: 1rem;
     color: var(--primary-lilasescuro);
@@ -191,8 +193,18 @@ ul li {
 .section-service {
     display: flex;
     flex-wrap: wrap;
-    max-width: 1200px;
+    width: 100vw;
     margin: 0 auto;
+    background: #eeeeee;
+}
+container-service {
+    display: block;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
 
@@ -209,6 +221,7 @@ ul li {
     flex: 1 1 200px;
     margin: 20px;
     max-width: 400px;
+    background-color: white;
     
   
 
@@ -227,10 +240,15 @@ ul li {
 .img-service {
     display: flex;
     height: 200px;
-    object-fit: cover;
     margin: 0 auto;
     justify-content: center;
     padding: 0px;
+}
+
+.img-service img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px 20px 0px 0px;
 }
 
 .txt-service {
