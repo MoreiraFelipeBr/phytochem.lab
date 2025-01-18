@@ -309,9 +309,9 @@ header nav ul li a:hover {
 .acao h2, .acao p {
     color:rgb(255, 0, 0);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
-    font-size: 2.5rem;
+    font-size: 1rem;
     align-items: start;
-    width: 50vw;
+    width: 30vw;
     
 }
 
