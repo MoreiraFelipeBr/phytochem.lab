@@ -142,6 +142,47 @@
                 clientes.</p>
         </section>
 
+        <section id="faq">
+            <h2>FAQ - Perguntas Frequentes</h2>
+            <div class="faq-item">
+                <button class="faq-question">O que é PhytoChem?</button>
+                <div class="faq-answer">
+                    <p>PhytoChem é uma empresa de consultoria técnico-científica especializada em pesquisa e desenvolvimento de produtos naturais, avaliação de estabilidade e controle de qualidade.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Quais serviços a PhytoChem oferece?</button>
+                <div class="faq-answer">
+                    <p>Oferecemos ensaios físico-químicos, estudos de estabilidade e vida de prateleira, elaboração de documentos da qualidade, treinamentos sob medida e estudos de viabilidade técnica e mercado.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Como posso entrar em contato com a PhytoChem?</button>
+                <div class="faq-answer">
+                    <p>Você pode entrar em contato conosco através do e-mail, WhatsApp ou pelo formulário de contato disponível em nosso site.</p>
+                </div>
+            </div>
+        </section>
+
+        <script type="text/javascript">
+            document.addEventListener('DOMContentLoaded', function () {
+                const faqQuestions = document.querySelectorAll('.faq-question');
+
+                faqQuestions.forEach(question => {
+                    question.addEventListener('click', () => {
+                        const answer = question.nextElementSibling;
+                        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+                    });
+                });
+            });
+        </script>
+
+        <section class="acao">
+            
+            <h2>Seção chamada de ação</h2>
+            <p>Ver com Aline principal produto e inserir aqui a chamada, como no exemplo da imagem ao fundo</p>
+        </section>
+       
     </main>
 
 

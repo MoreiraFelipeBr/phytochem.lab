@@ -270,6 +270,54 @@ header nav ul li a:hover {
     text-decoration: underline;
 }
 
+
+
+/* FAQ*/
+#faq {
+    margin: 20px 0;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+}
+
+.faq-question {
+    background-color: #f1f1f1;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    background-color: #fafafa;
+    border-left: 3px solid #007BFF;
+}
+
+
+.acao {
+    background-image: url('img/img-chamada-acao.png');
+    background-size: cover;
+    
+    background-position: center;
+    height: 400px;
+}
+.acao h2, .acao p {
+    color:rgb(255, 0, 0);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+    font-size: 2.5rem;
+    align-items: start;
+    width: 50vw;
+    
+}
+
+
+
+
 /* Rodapé */
 footer {
   /*   background-color: var(--primary-lilasclaro);
