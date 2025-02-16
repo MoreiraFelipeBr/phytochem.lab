@@ -6,9 +6,11 @@ window.addEventListener("scroll", () => {
     let currentScroll = window.scrollY;
 
     if (currentScroll > lastScroll) {
+        headerMovel.classList.add("hidden");
         contatosTop.classList.add("hidden"); // Esconde contatos-top
         /* header.classList.add("reduzido"); // Reduz a altura do header */
     } else {
+        headerMovel.classList.remove("hidden");
         contatosTop.classList.remove("hidden"); // Mostra contatos-top
         /* header.classList.remove("reduzido"); // Restaura a altura original do header */
     }

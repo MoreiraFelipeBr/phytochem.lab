@@ -124,8 +124,8 @@ ul li {
 }
 
 body {
-    margin-top: 70px; /* Para não sobrepor o conteúdo ao header */
-    font-family: var(--font1);
+    /* margin-top: 70px; /* Para não sobrepor o conteúdo ao header */ 
+    font-family: var(--font2);
     background-color: var(--claro);
     line-height: 1.6;
     width: 100%;
@@ -134,35 +134,34 @@ body {
 /* HEADER */
 
 header {
+    display: flexbox;
     justify-content: center;
-    padding: 0;
     align-items: center;
-    justify-content: center;
-    background-color: white;
-    position: fixed;
-    top: 0;
+    padding: 0;
+    height: 50px;
     width: 100%;
-    z-index: 3;
+    position: relative;
+    /*border: solid 1px black; */
+
     transition: height 0.3s ease-in-out;
 }
 
-
-.contatos-top {
-    position: absolute;
+.fixed {
+    position: fixed;
     top: 0;
-    left: 0;
-    z-index: 10;
+}
+.contatos-top-container {
     display: flex;
     width: 100%;
     max-width: 1200px;
-    align-items:self-end;
-    
-    
-    padding: 0;
-    
+    align-items: right;
+    justify-content: right;   
+    padding-top: 5px;
+    margin: 0 auto;
     height: 30px; 
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-    /* border: solid 1px black;  */
+    
+    /*border: solid 1px black; */
 }
 
 .hidden {
@@ -188,7 +187,7 @@ header {
 
 
 
-.div1 {
+.header-movel {
     display: flex;
     max-width: 1200px;
     justify-content: space-between;
@@ -197,7 +196,26 @@ header {
     width: 100%;
     height: 70px;
     padding: 0;
+    z-index: 20;
     
+}
+
+.header-fixed {
+    position: fixed;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 70px;
+    padding: 0;
+    background-color: var(--escuro);
+    z-index: 10;
+    display: none; /* Oculta o elemento */
+}
+.header-fixed-content{
+    display: flex;
+    max-width: 1200px;
 }
 
 .logoimg{
@@ -214,11 +232,9 @@ header nav {
     margin-left: auto;
     list-style: none;
     display: flex;
-    padding-right: 20px;
-    
+    padding-right: 40px;
     gap: 3rem;
-    justify-content: flex-end;
-    margin-left: auto;
+    justify-content: flex-end;   
 }
 
 
@@ -241,7 +257,8 @@ header nav ul li a {
 }
 
 #menu a {
-    color: var(--escuro);
+    color: var(--claro);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
@@ -258,13 +275,9 @@ header nav ul li a {
     margin-right: 15px;
 }
 
-
-
-
-
 #inicio {
-    position: relative;
-    height:75vh;
+    
+    height:60vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -275,12 +288,12 @@ header nav ul li a {
 
 #section-video {
     position: absolute;
-    top: 0;
+    top: 30px;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: -1; /* Coloca o vídeo atrás do conteúdo da seção */
+    z-index: -1; 
 }
 
 .inicio-content {
@@ -288,24 +301,26 @@ header nav ul li a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: 1; /* Garante que o conteúdo fique acima do vídeo */
-    
+    z-index: 1;     
     padding: 3rem;
     margin: 0;
     height: 100%;
+    width: 80vw;
+    
 }
 .inicio-content h1{
     line-height: 1.2;
-    color: var(--claro);
+    color: white;
     font-size: 4rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* padding-right: 20vw; */
 }
 
 .inicio-content p {
     color: var(--claro);
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    padding-left: 40%;
+    
     text-align: justify;
 }
 
