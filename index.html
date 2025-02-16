@@ -10,6 +10,8 @@
     <meta name="keywords"
         content="PhytoChem, pesquisa, desenvolvimento, produtos naturais, fitoterápicos, controle de qualidade, estabilidade, consultoria">
     <link rel="canonical" href="https://phytochem.com.br/">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
     <link rel="stylesheet" href="styles.css">
 
 
@@ -17,7 +19,19 @@
 
 <body>
 
-    <header>         
+    <header id="header" >     
+        
+        <div class="contatos-top" id="contatosTop">
+            <span class="material-symbols-outlined contatos-top-icone">call </span>
+            <span class="contato-top-texto">+55 19 9 8102-4043</span>
+
+            <span class="material-symbols-outlined contatos-top-icone">schedule</span>
+            <span class="contato-top-texto">Seg - Sex: 8:00 - 17:00</span>
+
+            <span class="material-symbols-outlined contatos-top-icone">location_on</span>
+            <span class="contato-top-texto">Av. José Lozano Araújo, 1136A - Jardim Ypê, Paulínia - SP</span>
+        </div>
+
             <div class="div1">
                 <a href="index.html">
                     <img src="img/logo-black.png" alt="PhytoChem Logo" class="logoimg"></a>
@@ -56,7 +70,7 @@
                 <h2 class="h2serv">Nossos Serviços</h2>
                 
                 <div class="caixa-serv">
-                    <img src="img/img5.jpg" class="img-serv">
+                    <img src="img/ensaios.jpg" class="img-serv">
                     <h3 class="h3serv">Ensaios Físico-Químicos</h3>
                     <p class="txtserv">
                         Caracterização físico-química<br>
@@ -77,7 +91,7 @@
                     </p>
                 </div>
                 <div class="caixa-serv">
-                    <img src="img/img3.jpg" class="img-serv">
+                    <img src="img/documentos.jpg" class="img-serv">
                     <h3 class="h3serv">Elaboração de Documentos da Qualidade</h3>
                     <p class="txtserv">
                         Manuais<br>
@@ -89,7 +103,7 @@
                     </p>
                 </div>
                 <div class="caixa-serv">
-                    <img src="img/img7.jpg" class="img-serv">
+                    <img src="img/treinamentos.jpg" class="img-serv">
                     <h3 class="h3serv">Treinamentos Sob Medida</h3>
                     <p class="txtserv">
                         Boas práticas de fabricação<br>
@@ -141,7 +155,7 @@
                 clientes.</p>
         </section>
 
-        <section id="faq">
+       <!--  <section id="faq">
             <h2>FAQ - Perguntas Frequentes</h2>
             <div class="faq-item">
                 <button class="faq-question">O que é PhytoChem?</button>
@@ -161,7 +175,7 @@
                     <p>Você pode entrar em contato conosco através do e-mail, WhatsApp ou pelo formulário de contato disponível em nosso site.</p>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <script type="text/javascript">
             document.addEventListener('DOMContentLoaded', function () {
@@ -183,6 +197,9 @@
         </section>
        
     </main>
+    <div class="degrade grad2">
+        
+    </div>
 
 
     <footer>
@@ -235,7 +252,7 @@
 
     </footer>
 
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', function () {
             const openMenu = document.getElementById('openMenu');
             const closeMenu = document.getElementById('closeMenu');
@@ -258,34 +275,10 @@
                 }, 300); // Tempo de transição correspondente ao CSS
             });
         });
-    </script>
-
-    <!--  <script type="text/javascript">
-
-        openMenu.addEventListener('click', () => {
-            menu.style.display = 'flex'
-
-            menu.style.right = (menu.offsetWidth * -1) + 'px' 
-            setTimeout(() => {
-                menu.style.opacity = 1
-
-                menu.style.right = '0'
-            }, 10)
-            
-        })
-
-        closeMenu.addEventListener('click', () => {
-            menu.style.opacity = '0'
-            menu.style.right = (menu.offsetWidth * -1) + 'px' 
-
-            setTimeout(() => {
-                menu.removeAttribute('style')
-            }, 200)
-            
-        })
-
     </script> -->
 
+    
+    <script src="script/script.js"></script>
 </body>
 
 </html>

@@ -1,21 +1,64 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@font-face {
+    font-family: 'Rockford';
+    src: url('font/RockfordSans-Regular.woff') format('woff'),
+         url('font/RockfordSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rockford';
+    src: url('font/RockfordSans-Bold.woff') format('woff'),
+         url('font/RockfordSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('font/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('font/Poppins-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
 
 :root {
     --primary-azul: #81cdff;
     --primary-lilasclaro: #a772ff;
     --primary-lilasescuro: #641bdd;
+
     --secundary-aqua: #b1c86f;
     --secundary-verde: #71c4b0;
-    --claro: #fcfcfc;
-    --escuro: rgb(41, 41, 41);
-    --backgroud1: #e7e7e7;
 
+    --claro: #fcfcfc;
+    --escuro: #4a4a4a;
+
+    --backgroud1: #e7e7e7;
     --gap: 3rem;
-    --font1: 'Roboto', Arial, sans-serif;
+    --font1: 'Rockford', Arial, sans-serif;
+    --font2: 'Poppins', Arial, sans-serif;
+    
 }
 
 .grad1{
-    background: linear-gradient(190deg, var(--primary-azul), var(--primary-lilasclaro), var(--primary-lilasescuro));
+    background: linear-gradient(130deg,  var(--primary-lilasclaro) 5%, var(--primary-azul) 50%, var(--secundary-verde) 95%);
+}
+
+.grad2{
+    background: linear-gradient(130deg,  var(--secundary-aqua), var(--secundary-verde));
+}
+
+.degrade{
+   
+    width: 100%;
+    height: 500px;
+    
 }
 
 /* Reset básico */
@@ -39,7 +82,9 @@ h1 {
     width: 100%;
     margin: 2rem auto;
     color: var(--escuro);
+    font-family: var(--font1);
     font-size: 3rem;
+
 }
 
 h2 {
@@ -47,6 +92,7 @@ h2 {
     text-align: center;
     width: 100%;
     color: var(--escuro);
+    font-family: var(--font1);
     font-size: 2.5rem;
 }
 
@@ -54,6 +100,7 @@ h3 {
     text-align: center;
     width: 100%;
     color: var(--escuro);
+    font-family: var(--font1);
     font-size: 1.3rem;
 }
 
@@ -61,45 +108,102 @@ p {
     font-family: var(--font1);
     color: black;
     font-size: 1em;
+    font-family: var(--font2);
 }
 
 ul {
     margin: 1rem 0;
     padding-left: 1.5rem;
+    font-family: var(--font2);
+
 }
 ul li {
     margin-bottom: 0.5rem;
+    font-family: var(--font2);
+
 }
 
 body {
     margin-top: 70px; /* Para não sobrepor o conteúdo ao header */
     font-family: var(--font1);
-    background-color: var(--backgroud1);
+    background-color: var(--claro);
     line-height: 1.6;
     width: 100%;
 }
 
 /* HEADER */
+
 header {
-    display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 0;
     align-items: center;
-    height: 70px;
+    justify-content: center;
     background-color: white;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 3;
-        
+    transition: height 0.3s ease-in-out;
 }
+
+header.reduzido {
+    height: 70px; /* Nova altura quando a .contatos-top some */
+    display: flexbox;
+    justify-content: center;
+    padding: 0;
+    align-items:start;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+.contatos-top {
+    display: flex;
+    max-width: 1200px;
+    justify-content:right;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    height: 30px; 
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    /* border: solid 1px black;  */
+}
+
+.hidden {
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none; 
+}
+
+.contatos-top-icone {
+    color: var(--primary-lilasescuro);
+    font-size: 1rem;
+    margin: 0px 2px;    
+    padding: 0;
+}
+
+.contato-top-texto {
+    font-family: var(--font2);
+    font-size: 0.8rem;
+    font-weight: lighter;
+    color: black;
+    margin-right: 10px;
+}
+
+
 
 .div1 {
     display: flex;
     max-width: 1200px;
     justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
     width: 100%;
+    height: 70px;
+    padding: 0;
+    
 }
 
 .logoimg{
@@ -218,19 +322,19 @@ header nav ul li a {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    background-color: var(--backgroud1);
+    background-color:var(--claro);
     margin: 0;
     padding: 0;
 }
 
 .corpodasecao {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: auto;
+    
     flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
-    background-color: #e7e7e7;
+    
 }
 
 .h2serv {
@@ -244,10 +348,11 @@ header nav ul li a {
     margin: 10px;
     border-radius: 20px;
     /*border: 1px solid black;*/
-    box-shadow: 0 4px 8px rgba(133, 133, 133, 0.5);
-    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(207, 207, 207, 0.5);
+    min-width: 300px;
+    max-width: 380px;
     background-color: white;
-    min-height: 450px;
+    min-height: 420px;
 }
 
 .img-serv {
@@ -257,7 +362,7 @@ header nav ul li a {
 }
 
 .h3serv {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin: 0 auto;
     padding: 0 1rem;
     text-align:left;
@@ -268,8 +373,9 @@ header nav ul li a {
     padding: 0 1rem;
     color: black;
     list-style: none;
-    font-size: 1rem;
+    font-size: 0.9rem;
     text-align:left;
+    margin-bottom: 1rem;
 }
 
 
@@ -295,7 +401,7 @@ header nav ul li a {
 
 
 
-/* FAQ*/
+/* FAQ
 #faq {
     margin: 20px 0;
 }
@@ -320,8 +426,9 @@ header nav ul li a {
     background-color: #fafafa;
     border-left: 3px solid #007BFF;
 }
+*/
 
-
+/*Chamda de ação*/
 .acao {
     background-image: url('img/img-chamada-acao.png');
     background-size: cover;
@@ -401,6 +508,9 @@ footer #contato a {
 
 @media only screen and  (max-width: 717px) {
    
+    .contatos-top {
+        display: none;
+    }
     #menu a {
         display: block;
         color: black;
