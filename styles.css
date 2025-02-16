@@ -148,13 +148,18 @@ header {
 
 
 .contatos-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
     display: flex;
-    max-width: 1200px;
-    justify-content:right;
-    align-items: center;
-    margin: 0 auto;
-    padding: 0;
     width: 100%;
+    max-width: 1200px;
+    align-items:self-end;
+    
+    
+    padding: 0;
+    
     height: 30px; 
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
     /* border: solid 1px black;  */
