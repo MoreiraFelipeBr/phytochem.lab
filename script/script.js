@@ -7,10 +7,10 @@ window.addEventListener("scroll", () => {
 
     if (currentScroll > lastScroll) {
         contatosTop.classList.add("hidden"); // Esconde contatos-top
-        header.classList.add("reduzido"); // Reduz a altura do header
+        /* header.classList.add("reduzido"); // Reduz a altura do header */
     } else {
         contatosTop.classList.remove("hidden"); // Mostra contatos-top
-        header.classList.remove("reduzido"); // Restaura a altura original do header
+        /* header.classList.remove("reduzido"); // Restaura a altura original do header */
     }
 
     lastScroll = currentScroll;

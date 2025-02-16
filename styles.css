@@ -146,17 +146,6 @@ header {
     transition: height 0.3s ease-in-out;
 }
 
-header.reduzido {
-    height: 70px; /* Nova altura quando a .contatos-top some */
-    display: flexbox;
-    justify-content: center;
-    padding: 0;
-    align-items:start;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 3;
-}
 
 .contatos-top {
     display: flex;
