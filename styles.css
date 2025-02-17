@@ -54,13 +54,6 @@
     background: linear-gradient(130deg,  var(--secundary-aqua), var(--secundary-verde));
 }
 
-.degrade{
-   
-    width: 100%;
-    height: 500px;
-    
-}
-
 /* Reset básico */
 * {
     margin: 0;
@@ -71,13 +64,13 @@
 /* Configurações gerais */
 
 section {
-    padding: var(--gap);
-    max-width: 100%;
+    padding: 0;
+     max-width: 100%;
     margin: 0 auto;
 }
 
 h1 {
-    margin-bottom: 1rem;
+    
     text-align: center;
     width: 100%;
     margin: 2rem auto;
@@ -88,7 +81,7 @@ h1 {
 }
 
 h2 {
-    margin: 1rem;
+    
     text-align: center;
     width: 100%;
     color: var(--escuro);
@@ -138,7 +131,7 @@ header {
     justify-content: center;
     align-items: center;
     padding: 0;
-    height: 50px;
+   
     width: 100%;
     position: relative;
     /*border: solid 1px black; */
@@ -197,7 +190,8 @@ header {
     padding: 0;
     z-index: 20;
     margin: 0;
-        transition: transform 0.1s ease-in-out, opacity 0.1s ease-in-out;
+    transition: transform 0.1s ease-in-out, opacity 0.1s ease-in-out;
+    
     /*background-color: var(--claro);*/
     
 }
@@ -219,8 +213,10 @@ header {
     padding: 5px ;
     height: 60px ;
     object-fit: cover;   
-    
 }
+
+
+
 
 header nav {
     flex: 1 1 100vw;
@@ -232,6 +228,7 @@ header nav {
     padding-right: 40px;
     gap: 3rem;
     justify-content: flex-end;   
+    
 }
 
 
@@ -255,7 +252,7 @@ header nav ul li a {
 
 #menu a {
     color: var(--claro);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
@@ -272,19 +269,27 @@ header nav ul li a {
     margin-right: 15px;
 }
 
-#inicio {
-    
-    height:60vh;
+/* MAIN */
+
+.inicio{
+    position:static;
+    top: 10px;
+    margin: 0;
+    height:80vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden; 
-    padding: 0px ;
+    /* overflow: hidden;  */
+    padding: 0 ;
+   /*  border:  1px solid black; */
+    background-color: rgba(0, 0, 0, 0.4);
 }
+
+
 
 #section-video {
     position: absolute;
-    top: 30px;
+    
     left: 0;
     width: 100%;
     height: 100%;
@@ -303,10 +308,12 @@ header nav ul li a {
     height: 100%;
     width: 90vw;
     
+    
 }
+
 .inicio-content h1{
     line-height: 1.2;
-    color: var(--escuro);
+    color: var(--claro);
     font-size: 4rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     
@@ -513,9 +520,10 @@ footer #contato a {
 
 @media only screen and  (max-width: 717px) {
    
-    .contatos-top {
+    #contatosTop {
         display: none;
     }
+
     #menu a {
         display: block;
         color: black;
@@ -540,8 +548,8 @@ footer #contato a {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        z-index: 1; /* Garante que o conteúdo fique acima do vídeo */
-        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+        /* background-color: rgba(0, 0, 0, 0.5); */
         padding: 1rem;
         margin: 0;
         height: 100%;
@@ -608,7 +616,14 @@ footer #contato a {
         opacity: 1;
     }
 
-    #menu a {
+    header nav ul li a {
+        color: var(--primary-azul);
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+
+    /* #menu a {
         color: black;
         font-size: 1.2rem;
         
@@ -617,5 +632,5 @@ footer #contato a {
         margin: 0px;
         align-items: center;
 
-    }
+    } */
 }
