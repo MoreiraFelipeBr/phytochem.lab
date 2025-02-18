@@ -506,60 +506,12 @@ button:hover {
 
 /* Rodapé */
 footer {
-  /*   background-color: var(--primary-lilasclaro);
-    color: var(--claro); */
     background-color: #4a4a4a;
     text-align: center;
     padding: 0;
 }
-footer #contato {
-    padding: 15px 30px;
 
-}
 
-footer h2, p, a {
-    color: var(--claro);
-    text-decoration: none;
-}
-
-footer ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    padding: 1rem 0;
-}
-
-footer ul li a {
-    color: var(--claro);
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-footer ul li a:hover {
-    color: var(--primary-azul);
-}
-footer #contato a {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem; 
-    text-decoration: none;
-    color: inherit;
-    color: var(--claro);
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.icon {    
-    height: 25px;
-    fill: var(--claro);
-}
-
-.copy {  
-    text-align: center;
-    margin: 5px;
-    font-size: 0.8rem;
-}
 
 
 @media only screen and  (max-width: 717px) {
