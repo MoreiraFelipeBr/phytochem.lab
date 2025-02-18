@@ -53,10 +53,6 @@
             </div> 
         
     </header>
-
-   
-        
-
         
           <section id="inicio" class="inicio" >
             
@@ -207,14 +203,53 @@
         </section>
        
    
-    <div class="degrade grad2">
-        
-    </div>
+    
+        <!--               formulário de contato              -->
+    
+        <div>
+            <h2>Agendamentos</h2>
+            <div class="containerform">
+                <div class="info">
+                    <h3>Agendamento de Coleta / Envio de Materiais</h3>
+                    <p>Preencha o formulário para Agendar a Coleta ou o Envio de Materiais.</p>
+            
+                </div>
+                <form id="collectionForm">
+                    <label for="name"></label>
+                    <input type="text" id="name" placeholder="Digite seu nome*" required>
+                    <label for="email"></label>
+                    <input type="email" id="email" placeholder="Digite seu e-mail*" required>
+                    <label for="phone"></label>
+                    <input type="tel" id="phone" placeholder="Telefone para Contato*" required>
+                    <label for="address"></label>
+                    <input type="text" id="address" placeholder="Endereço para Coleta / Envio de Material">
+                    <label for="date">Data Solicitada</label>
+                    <input type="date" id="date">
+                    <!-- <label>Tipo de Serviço:</label>
+                    <div>
+                        <input type="checkbox" id="collection" name="service" value="coleta">
+                        <label for="collection">Agendamento de Coleta de Material</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="material" name="service" value="material">
+                        <label for="material">Agendamento de Envio de Material</label>
+                    </div> -->
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" rows="4"></textarea>
+                    <!-- <input type="checkbox" id="recaptcha" required>
+                    <label for="recaptcha">Não sou um robô</label> -->
+                    <button type="submit" class="grad2">ENVIAR</button>
+                </form>
+            </div>
+        </div>
+
+        <!--                FOOTER             -->
+
 
 
     <footer>
         <section id="contato">
-            <h2>Entre em Contato</h2>
+            <h2>Footer</h2>
             <!-- E-mail -->
             <a href="https://wa.me/5519981024043" target="_blank" aria-label="Contato por e-mail">
                 <svg aria-hidden="true" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" class="icon">

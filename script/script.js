@@ -79,3 +79,12 @@ document.addEventListener('DOMContentLoaded', function () {
         }, 300); 
     });
 });
+
+//Formulário
+
+document.getElementById('collectionForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    // Aqui você pode adicionar a lógica para processar o formulário, como enviá-lo para um servidor.
+    alert('Formulário enviado com sucesso!');
+});
