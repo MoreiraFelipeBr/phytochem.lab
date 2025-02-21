@@ -506,10 +506,79 @@ button:hover {
 
 /* Rodapé */
 footer {
-    background-color: #4a4a4a;
-    text-align: center;
+    background-color: var(--escuro);
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.logo img {
+    width: 50px; 
+    height: auto;
+}
+
+.info-section, .contact-section {
+    text-align: left;
+    color: var(--claro)
+}
+
+.footer-container  h2 {
+    font-size: 24px;
+    color: var(--claro);
+}
+
+.footer-container h3 {
+    font-size: 18px;
+    margin-top: 10px;
+    color: var(--claro);
+}
+
+.contato-footer-icone {
+    color: white;
+    font-size: 1rem;
+    margin: 0px 2px;    
     padding: 0;
 }
+
+.contato-footer-texto{
+    font-family: var(--font2);
+    font-size: 1rem;
+    font-weight: lighter;
+    color: white;
+    margin-right: 10px;
+}
+
+footer p {
+    display: flex;
+    font-size: 18px;
+    margin-top: 10px;
+    color: var(--claro);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    color: var(--claro);
+}
+
+.social-icons img {
+    width: 20px; 
+    margin: 0 5px;
+}
+
+
+
+
+
+
+
+
+
 
 
 

@@ -5,7 +5,7 @@ const imgLogo = document.getElementById("imglogo");
 window.addEventListener("scroll", () => {
     let scrollPosition = window.scrollY; // Obtém a posição atual do scroll
 
-    if (scrollPosition > 50) { // Se passou de 100px, esconde contatosTop
+    if (scrollPosition > 100) { // Se passou de 100px, esconde contatosTop
         header.classList.add("header-fixed");
         header.style.top = "0";
         document.querySelector(".header-content").style.border = "none";
