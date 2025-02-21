@@ -517,14 +517,21 @@ footer {
     align-items: flex-start;
 }
 
-.logo img {
-    width: 50px; 
+.footer-logo img {
+    width: 250px; 
     height: auto;
 }
 
 .info-section, .contact-section {
     text-align: left;
     color: var(--claro)
+}
+
+.info-section p {
+    font-size: 1rem;
+    font-family: var(--font2);
+    margin-top: 10px;
+    color: var(--claro);
 }
 
 .footer-container  h2 {
@@ -567,8 +574,9 @@ footer p {
 }
 
 .social-icons img {
-    width: 20px; 
-    margin: 0 5px;
+    
+    width: 50px; 
+    margin: 10px;
 }
 
 
