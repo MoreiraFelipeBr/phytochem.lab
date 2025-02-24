@@ -396,32 +396,34 @@ header nav ul li a {
     text-decoration: underline;
 }
 
-/* FAQ
-#faq {
-    margin: 20px 0;
+/*                         SOBRE                             */
+
+.sobre-container {
+    display: flex;
+    justify-content: auto; 
+    
+    max-width: 1200px;
+    margin: 10px auto;
 }
 
-.faq-item {
-    margin-bottom: 10px;
-}
 
-.faq-question {
-    background-color: #f1f1f1;
-    border: none;
-    padding: 10px;
-    width: 100%;
-    text-align: left;
-    cursor: pointer;
-    font-size: 16px;
-}
 
-.faq-answer {
-    display: none;
-    padding: 10px;
-    background-color: #fafafa;
-    border-left: 3px solid #007BFF;
+.sobre-caixa {
+    flex: 3fr;
+    align-items: center;
+    margin: 10px;    
+    min-width: 300px;
+    max-width: 380px;
+    background-color: white;
+    min-height: 200px;
 }
-*/
+.sobre-caixa p{
+    padding: 0 1rem;
+    list-style: none;
+    font-size: 0.9rem;
+    text-align:left;
+    margin-bottom: 1rem;
+}
 
 /*Chamada de ação*/
 .acao {
@@ -507,8 +509,8 @@ button:hover {
 /* Rodapé */
 footer {
     background-color: var(--escuro);
-    color: #fff;
-    padding: 20px 0;
+    
+    padding: 20px 0 0 0;
 }
 
 .footer-container {
@@ -568,10 +570,22 @@ footer p {
 }
 
 .footer-bottom {
+    display: flex;
     text-align: center;
-    margin-top: 20px;
+    justify-content: center;
+    margin-top: 0;
+    padding: 0;
+    
+}
+
+.footer-bottom p {
+    font-size: 0.7rem;
     color: var(--claro);
 }
+.footer-bottom a {
+     text-decoration: none;
+     color: var(--claro);
+ }
 
 .social-icons img {
     
@@ -589,7 +603,7 @@ footer p {
 
 
 
-
+RESPONSIVIDADE
 
 @media only screen and  (max-width: 717px) {
    

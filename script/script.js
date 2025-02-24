@@ -6,20 +6,20 @@ const imgLogo = document.getElementById("imglogo");
 window.addEventListener("scroll", () => {
     let scrollPosition = window.scrollY; // Obtém a posição atual do scroll
 
-    if (scrollPosition > 15) { // Se passou de 95px, esconde contatosTop e fixa o header
+    if (scrollPosition > 15) { 
         header.classList.add("header-fixed");
         header.style.top = "0";
         document.querySelector(".header-content").style.border = "none";
         contatosTop.classList.add("hidden");
 
-        if (scrollPosition > 50) { // Se passou de 100px, muda a cor de fundo do header e a logo
+        if (scrollPosition > 50) {
             header.style.backgroundColor = "white";
             imgLogo.src = "img/logo-blue.png";
             document.querySelectorAll('#menu a').forEach(link => {
                 link.style.color = 'var(--primary-azul)';
             });
         }
-    } else { // Se está no topo, mantém tudo visível e no estado original
+    } else {
         imgLogo.src = "img/logo-white.png";
         header.classList.remove("header-fixed");
         header.style.top = "0";
