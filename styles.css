@@ -319,6 +319,10 @@ header nav ul li a {
 
 /* SERVIÇOS */
 
+#servicos{
+    margin-bottom: 30px;
+}
+
 .width-100 {
     display: flex;
     justify-content: center;
@@ -378,25 +382,12 @@ header nav ul li a {
     margin-bottom: 1rem;
 }
 
-/*                           Blog & Artigos                             */
-
-#blog article {
-    border: 1px solid var(--secundary-aqua);
-    padding: 1rem;
-    margin-bottom: 1rem;
-    background-color: var(--claro);
-}
-#blog article a {
-    color: var(--primary-lilasescuro);
-    text-decoration: none;
-    font-weight: bold;
-}
-
-#blog article a:hover {
-    text-decoration: underline;
-}
 
 /*                         SOBRE                             */
+#sobre{
+    margin-bottom: 30px;
+
+}
 
 .sobre-container {
     display: flex;
@@ -405,8 +396,6 @@ header nav ul li a {
     max-width: 1200px;
     margin: 10px auto;
 }
-
-
 
 .sobre-caixa {
     flex: 3fr;
@@ -417,12 +406,21 @@ header nav ul li a {
     background-color: white;
     min-height: 200px;
 }
+
 .sobre-caixa p{
     padding: 0 1rem;
     list-style: none;
     font-size: 0.9rem;
     text-align:left;
     margin-bottom: 1rem;
+}
+
+.sobre-caixa h3{
+    padding: 0 1rem;
+    list-style: none;
+    font-size: 1rem;
+    text-align:left;
+    
 }
 
 /*Chamada de ação*/
@@ -442,7 +440,12 @@ header nav ul li a {
     
 }
 
-/*Formulário de contato*/
+/*        Formulário de contato        */
+
+#contato{
+
+}
+
 .containerform {
     display: flex;
     justify-content: space-between;
@@ -452,7 +455,7 @@ header nav ul li a {
     max-width: 1200px;
     background: white;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 }
 
 .info {
