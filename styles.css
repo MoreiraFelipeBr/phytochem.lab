@@ -264,17 +264,17 @@ header nav ul li a {
 /*               MAIN                        */
 
 .inicio{
-    position:static;
+    /*position:static;*/
     top: 10px;
     margin: 0;
-    height:80vh;
+    height:95vh;
     display: flex;
     align-items: center;
     justify-content: center;
     /* overflow: hidden;  */
     padding: 0 ;
-   /*  border:  1px solid black; */
-    background-color: rgba(0, 0, 0, 0.4);
+    /*border:  1px solid black; */
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 #section-video {
@@ -285,6 +285,7 @@ header nav ul li a {
     height: 100%;
     object-fit: cover;
     z-index: -1; 
+    margin: 0;
 }
 
 .inicio-content {
@@ -296,7 +297,7 @@ header nav ul li a {
     padding: 3rem;
     margin: 0;
     height: 100%;
-    width: 90vw;
+    width: 95vw;
     
     
 }
@@ -317,10 +318,20 @@ header nav ul li a {
     text-align: justify;
 }
 
+.new-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    height: 10vh;
+    }
+
 /* SERVIÇOS */
 
 #servicos{
     margin-bottom: 30px;
+    display: flex;
 }
 
 .width-100 {
@@ -337,7 +348,7 @@ header nav ul li a {
     display: flex;
     justify-content: auto; 
     flex-wrap: wrap;
-    max-width: 1200px;
+    /*max-width: 1200px;*/
     margin: 0 auto;
 }
 
@@ -354,7 +365,7 @@ header nav ul li a {
     /*border: 1px solid black;*/
     box-shadow: 0 4px 8px rgba(207, 207, 207, 0.5);
     min-width: 300px;
-    max-width: 380px;
+    max-width: 360px;
     background-color: white;
     min-height: 420px;
 }
