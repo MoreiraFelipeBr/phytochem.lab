@@ -83,10 +83,33 @@ document.addEventListener('DOMContentLoaded', function () {
         menu.style.right = (menu.offsetWidth * -1) + 'px';
         setTimeout(() => {
             menu.style.display = 'none';
+        }, 300);
+    });
+});
+/* 
+document.addEventListener('DOMContentLoaded', function () {
+    const openMenu = document.getElementById('openMenu');
+    const closeMenu = document.getElementById('closeMenu');
+    const menu = document.getElementById('menu');
+
+    openMenu.addEventListener('click', () => {
+        menu.style.display = 'flex';
+        menu.style.right = (menu.offsetWidth * -1) + 'px';
+        setTimeout(() => {
+            menu.style.opacity = 1;
+            menu.style.right = '0';
+        }, 10);
+    });
+
+    closeMenu.addEventListener('click', () => {
+        menu.style.opacity = '0';
+        menu.style.right = (menu.offsetWidth * -1) + 'px';
+        setTimeout(() => {
+            menu.style.display = 'none';
         }, 300); 
     });
 });
-
+ */
 //scroll section sobre
 function scrollServicos(direction) {
     const container = document.querySelector('.corpodasecao');
