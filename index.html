@@ -178,13 +178,26 @@
 
     <section id="contato">
         <h2>Contato</h2>
-
         <div class="containerform">
             <div class="info">
-                <h3>Entre em contato coma Phytochem</h3>
-                <p>Utilize o formulário ao lado para nos enviar uma mensagem.</p>
-
+                <h3>Entre em contato com a Phytochem</h3>
+                <p>Utilize o formulário para nos enviar uma mensagem.</p>
             </div>
+            <form id="collectionForm" action="https://formspree.io/f/xldgqpyd" method="POST" enctype="multipart/form-data">
+                <label for="name"></label>
+                <input type="text" id="name" name="name" placeholder="Digite seu nome*" required>
+                <label for="email"></label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail*" required>
+                <label for="phone"></label>
+                <input type="tel" id="phone" name="phone" placeholder="Telefone para Contato*" required>
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Digite sua mensagem*" required></textarea>
+                <button type="submit" class="grad2">ENVIAR</button>
+            </form>
+        </div>
+    
+
+            <!-- </div>
             <form id="collectionForm">
                 <label for="name"></label>
                 <input type="text" id="name" placeholder="Digite seu nome*" required>
@@ -193,25 +206,11 @@
                 <label for="phone"></label>
                 <input type="tel" id="phone" placeholder="Telefone para Contato*" required>
                 <label for="address"></label>
-                <!--<input type="text" id="address" placeholder="Endereço para Coleta / Envio de Material">
-                <label for="date">Data Solicitada</label>
-                <input type="date" id="date">
-                 <label>Tipo de Serviço:</label>
-                    <div>
-                        <input type="checkbox" id="collection" name="service" value="coleta">
-                        <label for="collection">Agendamento de Coleta de Material</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="material" name="service" value="material">
-                        <label for="material">Agendamento de Envio de Material</label>
-                    </div> -->
                 <label for="message">Mensagem:</label>
                 <textarea id="message" rows="4"></textarea>
-                <!-- <input type="checkbox" id="recaptcha" required>
-                    <label for="recaptcha">Não sou um robô</label> -->
                 <button type="submit" class="grad2">ENVIAR</button>
             </form>
-        </div>
+        </div> -->
     </section>
 
     <!--                FOOTER             -->
