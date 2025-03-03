@@ -1,39 +1,43 @@
 
-const header = document.getElementById("header");
-const contatosTop = document.getElementById("contatosTop");
-const imgLogo = document.getElementById("imglogo");
+if (window.matchMedia("(max-width: 480px)").matches) {
+    // Não executar o código abaixo em telas menores que 480px
+} else {
+    const header = document.getElementById("header");
+    const contatosTop = document.getElementById("contatosTop");
+    const imgLogo = document.getElementById("imglogo");
 
-window.addEventListener("scroll", () => {
-    let scrollPosition = window.scrollY; // Obtém a posição atual do scroll
+    window.addEventListener("scroll", () => {
+        let scrollPosition = window.scrollY; // Obtém a posição atual do scroll
 
-    if (scrollPosition > 15) { 
-        header.classList.add("header-fixed");
-        header.style.top = "0";
-        document.querySelector(".header-content").style.border = "none";
-        contatosTop.classList.add("hidden");
+        if (scrollPosition > 15) { 
+            header.classList.add("header-fixed");
+            header.style.top = "0";
+            document.querySelector(".header-content").style.border = "none";
+            contatosTop.classList.add("hidden");
 
-        if (scrollPosition > 50) {
-            imgLogo.style.display = "flex";
+            if (scrollPosition > 50) {
+                imgLogo.style.display = "flex";
 
-            header.style.backgroundColor = "white";
-            imgLogo.src = "img/logo-blue.png";
+                header.style.backgroundColor = "white";
+                imgLogo.src = "img/logo-blue.png";
+                document.querySelectorAll('#menu a').forEach(link => {
+                    link.style.color = 'var(--primary-azul)';
+                });
+            }
+        } else {
+            imgLogo.style.display = "none";
+            imgLogo.src = "img/logo-white.png";
+            header.classList.remove("header-fixed");
+            header.style.top = "0";
+            document.querySelector(".header-content").style.border = "";
+            header.style.backgroundColor = "";
+            contatosTop.classList.remove("hidden");
             document.querySelectorAll('#menu a').forEach(link => {
-                link.style.color = 'var(--primary-azul)';
+                link.style.color = 'var(--claro)';
             });
         }
-    } else {
-        imgLogo.style.display = "none";
-        imgLogo.src = "img/logo-white.png";
-        header.classList.remove("header-fixed");
-        header.style.top = "0";
-        document.querySelector(".header-content").style.border = "";
-        header.style.backgroundColor = "";
-        contatosTop.classList.remove("hidden");
-        document.querySelectorAll('#menu a').forEach(link => {
-            link.style.color = 'var(--claro)';
-        });
-    }
-});
+    });
+}
 
 /* let lastScroll = window.scrollY;
 const header = document.getElementById("header");
