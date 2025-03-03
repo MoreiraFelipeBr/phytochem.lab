@@ -13,6 +13,8 @@ window.addEventListener("scroll", () => {
         contatosTop.classList.add("hidden");
 
         if (scrollPosition > 50) {
+            imgLogo.style.display = "flex";
+
             header.style.backgroundColor = "white";
             imgLogo.src = "img/logo-blue.png";
             document.querySelectorAll('#menu a').forEach(link => {
@@ -20,6 +22,7 @@ window.addEventListener("scroll", () => {
             });
         }
     } else {
+        imgLogo.style.display = "none";
         imgLogo.src = "img/logo-white.png";
         header.classList.remove("header-fixed");
         header.style.top = "0";
