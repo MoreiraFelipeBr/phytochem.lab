@@ -1,3 +1,23 @@
+@media only screen and (max-width: 1000px) {
+    .banner-img{
+        height: 200px ;
+    }
+
+    .inicio-content1{
+        margin: 0 5%;       
+    }
+
+    .inicio-content1 h1{
+        font-size: 2rem;    
+    }
+
+    
+    .inicio-content2{
+        margin: 0 5%;
+        width: 90%;
+    }
+}
+
 
 @media only screen and (max-width: 768px) {
     /* Ajustes gerais */
