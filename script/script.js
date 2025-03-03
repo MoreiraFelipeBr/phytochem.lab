@@ -84,6 +84,24 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+//scroll section sobre
+function scrollServicos(direction) {
+    const container = document.querySelector('.corpodasecao');
+    const scrollAmount = 300; // Quantidade de rolagem (ajuste conforme necessário)
+
+    if (direction === 'left') {
+        container.scrollBy({
+            left: -scrollAmount,
+            behavior: 'smooth'
+        });
+    } else if (direction === 'right') {
+        container.scrollBy({
+            left: scrollAmount,
+            behavior: 'smooth'
+        });
+    }
+}
+
 //Formulário
 
 document.getElementById('collectionForm').addEventListener('submit', function(event) {

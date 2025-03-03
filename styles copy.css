@@ -336,67 +336,34 @@ header nav ul li a {
 
 .width-100 {
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    background-color: var(--claro);
+    width: 100vw;
+    background-color:var(--claro);
     margin: 0;
     padding: 0;
-    position: relative; /* Para posicionar os botões corretamente */
 }
+
+/*.corpodasecao {
+    display: flex;
+    justify-content: auto; 
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}*/
 
 .corpodasecao {
     display: flex;
-    overflow-x: hidden; /* Esconde a barra de rolagem */
+    overflow-x: auto; /* Habilita a rolagem horizontal */
     scroll-behavior: smooth; /* Adiciona rolagem suave */
-    gap: 20px; /* Espaçamento entre as caixas */
-    padding: 10px;
-    width: 90%; /* Ajuste para deixar espaço para os botões */
-    margin: 0 auto;
-}
-
-.scroll-button {
-    background-color: rgba(0, 0, 0, 0.5);
-    border: none;
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
-    padding: 10px;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
+    gap: 10px; /* Espaçamento entre as caixas */
+    
+    width: 100%; /* Garante que o contêiner ocupe toda a largura */
+    max-width: 100%; /* Evita que o contêiner ultrapasse a largura da tela */
+    margin: 10px 20px;
     justify-content: center;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1;
 }
 
-.scroll-button.left {
-    left: 10px; /* Posiciona o botão esquerdo */
-}
-
-.scroll-button.right {
-    right: 10px; /* Posiciona o botão direito */
-}
-
-.scroll-button:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-.caixa-serv {
-    flex: 0 0 auto; /* Impede que as caixas se ajustem ao tamanho do contêiner */
-    align-items: center;
-    margin: 5px;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(207, 207, 207, 0.5);
-    min-width: 300px;
-    max-width: 360px;
-    background-color: white;
-    min-height: 420px;
-}
 
 .h2serv {
     padding: 1rem;
@@ -439,7 +406,24 @@ header nav ul li a {
     margin-bottom: 1rem;
 }
 
+/* Estilizando a barra de rolagem */
+.corpodasecao::-webkit-scrollbar {
+    height: 8px; /* Altura da barra de rolagem */
+}
 
+.corpodasecao::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Cor de fundo da barra de rolagem */
+    border-radius: 10px;
+}
+
+.corpodasecao::-webkit-scrollbar-thumb {
+    background: #888; /* Cor do "thumb" (a parte móvel da barra de rolagem) */
+    border-radius: 10px;
+}
+
+.corpodasecao::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Cor do "thumb" ao passar o mouse */
+}
 
 
 /*                         SOBRE                             */
@@ -451,14 +435,9 @@ header nav ul li a {
 .sobre-container {
     display: flex;
     justify-content: auto; 
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
-    /* display: flex;
-    justify-content: auto; 
     
     max-width: 1200px;
-    margin: 10px auto; */
+    margin: 10px auto;
 }
 
 .sobre-caixa {

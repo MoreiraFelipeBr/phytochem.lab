@@ -1,0 +1,116 @@
+@media only screen and  (max-width: 717px) {
+   
+    #contatosTop {
+        display: none;
+    }
+
+    #menu a {
+        display: block;
+        color: black;
+        font-size: 1.3rem;
+        
+        padding: 5px;
+    }
+
+    #inicio {
+        position: relative;
+        height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--claro);
+        overflow: hidden; /* garantir que o vídeo não ultrapasse a seção */
+        padding: 0px ;
+    }
+
+    .inicio-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        /* background-color: rgba(0, 0, 0, 0.5); */
+        padding: 1rem;
+        margin: 0;
+        height: 100%;
+    }
+
+    .inicio-content h1{
+        line-height: 1.2;
+        color: var(--claro);
+        font-size: 2.5rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        text-align: center;
+    }
+    
+    .inicio-content p { 
+        color: var(--claro);
+        font-size: 1rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        padding: 0;
+        margin-top: 15px;
+        text-align: justify;
+    }
+
+    #openMenu, #closeMenu {
+        display: block;
+        
+    }
+
+    #openMenu{
+        margin-left: auto;
+        margin-right: 20px;
+        color: black;
+        cursor: pointer; 
+        padding: 5px;
+        
+    }
+
+    #closeMenu{
+        position: fixed;
+        right: 10px;
+        top: 20px;
+        cursor: pointer; 
+        font-size: 2rem;
+    }
+
+    nav{
+        position: fixed;
+        flex-direction: column;
+        width: 60vw;
+        height: 80vh;
+        background: rgba(255,255,255, 0.98);
+        align-items: center;
+        justify-content: center;
+        margin-top: 0px;
+        display: none;
+        opacity: 0;
+        transition: 0.3s;
+        border-radius: 20px;
+        z-index: 2;
+        gap: 0;
+    }
+
+    nav.show {
+        display: flex; /* Mostra o menu quando a classe 'active' é adicionada */
+        opacity: 1;
+    }
+
+    header nav ul li a {
+        color: var(--primary-azul);
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+
+    /* #menu a {
+        color: black;
+        font-size: 1.2rem;
+        
+        z-index: 2;
+        padding: 0px;
+        margin: 0px;
+        align-items: center;
+
+    } */
+}
