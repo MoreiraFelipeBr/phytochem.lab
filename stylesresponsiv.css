@@ -189,9 +189,7 @@
     
 
     /* Ajustes na seção de início */
-    
-
-   
+      
 
     #inicio {       
         display: flex;
@@ -205,6 +203,7 @@
         display: block;
         align-items: center;
         justify-content: center;
+        background-color: rgb(255, 255, 255, 0.3);
         
     }
     #section-video {
