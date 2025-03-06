@@ -274,7 +274,7 @@ header nav ul li a {
     justify-content: center;
     /* overflow: hidden;  */
     padding: 0 ;
-     background-color: rgba(255, 255, 255, 0.4); 
+     background-color: rgba(255, 255, 255, 0.6); 
     /* background-color: rgba(0,0,0, 0.5); */
         
 }
@@ -356,6 +356,8 @@ header nav ul li a {
 }
 
 /*                         SOBRE                             */
+
+
 #sobre{
     margin-bottom: 30px;
 
@@ -364,8 +366,8 @@ header nav ul li a {
 .sobre1-container1{
     display:flex;
     justify-content: auto; 
-    margin: 0 auto;
-    padding: 5px;
+    margin: 20px auto;
+    padding: 0px;
     max-width: 100vw;
     flex-wrap: wrap;    
     
@@ -374,10 +376,10 @@ header nav ul li a {
 .sobre-texto1{
     flex: 2fr;
     align-items: left;
-    margin: 5px;    
+    margin: 25px auto;    
     
     max-width: 100vw;
-    margin: auto;
+    
     display: flex;
     flex-wrap: wrap;
    /*  display: flex;
@@ -390,6 +392,8 @@ header nav ul li a {
 
 .sobre-texto1 p{
     width: 45vw;
+    margin-right: 10px;
+
 
 }
 
@@ -408,16 +412,64 @@ header nav ul li a {
 .sobre1-container2 {
     display: flex;
     justify-content: auto; 
-    margin: 10px auto;
-    padding: 5px;
-    max-width: 100vw;
+    margin: 5px auto;
+    padding: 10vh 0;
+    width: 100vw;
     flex-wrap: wrap;    
     justify-content: center; 
+
+
+    background-image: url('img/background-sobre.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;   
+    
+    
+    background-color: #d8d8d8;
+    margin: 0;
+
+    
     /* 
     
     max-width: 1200px;
     margin: 10px auto; */
 }
+
+.sobre1-caixa{
+    align-items: center;
+    margin: 5px;    
+    min-width: 300px;
+    max-width: 380px;
+    background-color: white;
+    min-height: 150px;
+    padding: 15px;
+    border-radius: 0 25px;
+
+}
+
+
+
+.sobre1-caixa p{
+    padding: 0 1rem;
+    list-style: none;
+    font-size: 0.9rem;
+    text-align:left;
+    margin-bottom: 1rem;
+}
+
+
+.sobre1-caixa h4{
+    margin-left: 5px;
+    list-style: none;
+    font-size: 1rem;
+    text-align:left;
+    color: var(--escuro);
+    
+
+    
+}
+
+
 
 
 
