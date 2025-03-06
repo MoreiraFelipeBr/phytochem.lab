@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1020px) {
   
 
     .inicio-content1{
@@ -74,6 +74,14 @@
         height: 60px ;
         object-fit: cover;
         content: url('img/logo-white.png');
+    }
+
+    #menu a {
+        color: var(--claro);
+        /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
     }
 
     #contatosTop {
@@ -254,7 +262,7 @@
         justify-content: center;
         /* overflow: hidden;  */
         padding: 0 ;
-        background-color: rgba(255, 255, 255, 0.8); 
+        background-color: rgba(255, 255, 255, 0.5); 
         
 
         
@@ -276,6 +284,7 @@
     #section-video {
         margin-top: 70px;
         height: var(--vh);
+        object-position: left
         
      }
 
@@ -283,25 +292,47 @@
         display: flex;
         justify-content: center;
         align-items:center;  
-        padding: 60px 0 0 0;  
-        margin: 0 5%;
-        
-        /* border: solid 1px black;   */
-        
+        padding: 10vh 0 0 0;  
+        margin: 20px auto;
+        width: 94vw;
     }
     
     .inicio-content2{
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        z-index: 1; 
+        margin: 20px auto;
+        width: 94vw;
+        
+        /* display: block;
         justify-content: center;
         align-items: center;
         margin: 0 5%;       
-        /*border: solid 1px red;*/
+        border: solid 1px red;
+        width: 95vw;
+     */
+
+     
+    }
     
+    .inicio-content2 p {
+        font-size: 1.1rem; 
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        margin: 0;
+
     }
     
 
     .banner-img{
         display: none;
+    }
+
+
+    .inicio-content1 h1{
+        text-align: justify;
+        color: var(--escuro);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     }
 
     
