@@ -1,6 +1,6 @@
 
-if (window.matchMedia("(max-width: 480px)").matches) {
-    // Não executar o código abaixo em telas menores que 480px
+if (window.matchMedia("(max-width: 768px)").matches) {
+    // Não executar o código abaixo em telas menores que 768px
 } else {
     const header = document.getElementById("header");
     const contatosTop = document.getElementById("contatosTop");
@@ -29,7 +29,7 @@ if (window.matchMedia("(max-width: 480px)").matches) {
             imgLogo.src = "img/logo-white.png";
             header.classList.remove("header-fixed");
             header.style.top = "0";
-            document.querySelector(".header-content").style.border = "";
+            /* document.querySelector(".header-content").style.border = ""; */
             header.style.backgroundColor = "";
             contatosTop.classList.remove("hidden");
             document.querySelectorAll('#menu a').forEach(link => {

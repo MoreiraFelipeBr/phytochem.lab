@@ -330,7 +330,8 @@ header nav ul li a {
 .banner-img{
     display: flex;
     padding: 5px ;
-    height: 200px ;
+    height: auto ;
+    width: 25vw;
     object-fit: cover;   
 }
 
