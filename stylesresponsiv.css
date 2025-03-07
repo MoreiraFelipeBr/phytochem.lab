@@ -49,8 +49,9 @@
         width: 100%;
         height: 70px;
         padding: 0;
-        z-index: 20;
+        z-index: 10;
         margin: 0;
+        top: 0;
         /*margin: solid 1px black;*/
         /*background-color: var(--claro);*/
         background: linear-gradient(130deg,  var(--primary-lilasclaro) 5%, var(--primary-azul) 50%, var(--secundary-verde) 95%);
@@ -222,6 +223,7 @@
         padding: 0;
         z-index: 20;
         margin: 0;
+        top:0;
         /*margin: solid 1px black;*/
         background-color: var(--claro);
         /* background: linear-gradient(130deg,  var(--primary-lilasclaro) 5%, var(--primary-azul) 50%, var(--secundary-verde) 95%); */
@@ -254,7 +256,7 @@
 
     .inicio { 
         /*position:static;*/
-        top: 10px;
+        top: 0px;
         margin: 0;
         height: var(--vh);
         display: block;
@@ -282,7 +284,7 @@
         
     }
     #section-video {
-        margin-top: 70px;
+        margin-top: 50px;
         height: var(--vh);
         object-position: left
         
@@ -387,22 +389,35 @@
         transition: color 0.3s ease;
     }
         /* Ajustes na seção de serviços */
+        
+        .corpodasecao {
+            display: flex;
+            flex-wrap:wrap;
+            
+            justify-content: center;
+            gap: 10px; 
+            padding: 0px;
+            width: 90vw; 
+            margin: 0 auto; 
+            
+        }
         .caixa-serv {
-            min-width: 200px; /* Reduz a largura mínima das caixas */
-            max-width: 200px;
-            min-height: 300px; /* Reduz a altura das caixas */
+            width: 420px;
+            min-height:300px ;
+            height: 350px;
+            max-width: 90vw;
         }
 
         .img-serv {
-            height: 120px; /* Reduz a altura das imagens */
+            height: 160px; 
         }
 
         .h3serv {
-            font-size: 0.9rem; /* Reduz o tamanho do título */
+            font-size: 0.9rem; 
         }
 
         .txtserv {
-            font-size: 0.7rem; /* Reduz o tamanho do texto */
+            font-size: 0.9rem; 
         }
 
         /* Ajustes no formulário de contato */
@@ -416,13 +431,19 @@
             font-size: 0.9rem; /* Reduz o tamanho da fonte */
         }
 
-        /* Ajustes no footer */
+        /*      Ajustes no footer        */
+
+        .footer {
+            justify-content:space-between;
+            align-items: center;
+            padding: 10px;
+        }
         .footer-logo img {
-            width: 150px; /* Reduz o tamanho do logo no footer */
+            width: 150px; 
         }
 
         .info-section p, .contact-section p {
-            font-size: 0.8rem; /* Reduz o tamanho do texto */
+            font-size: 0.8rem; 
         }
 
         .social-icons img {

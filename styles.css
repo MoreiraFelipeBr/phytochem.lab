@@ -187,7 +187,7 @@ header {
     width: 100%;
     height: 70px;
     padding: 0;
-    z-index: 20;
+    z-index: 10;
     margin: 0;
     transition: transform 0.1s ease-in-out, opacity 0.1s ease-in-out;
     
@@ -580,9 +580,9 @@ header nav ul li a {
     align-items: center;
     padding: 0;
     margin: 0;
-    height: 10vh;
+    height: 15vh;
     box-sizing: border-box;
-    /* background: url('img/backgroundprovisorio.png') no-repeat center center fixed, 
+    /*background: url('img/backgroundprovisorio.png') no-repeat center center fixed, 
     linear-gradient(130deg,  var(--primary-lilasclaro) 5%, var(--primary-azul) 50%, var(--secundary-verde) 95%);;
     background-size: cover; */
     /*border: solid 1px black;*/
@@ -609,6 +609,7 @@ header nav ul li a {
     
 }
 
+/* 
 .scroll-button {
     background-color: rgba(0, 0, 0, 0.5);
     border: none;
@@ -629,16 +630,16 @@ header nav ul li a {
 }
 
 .scroll-button.left {
-    left: 10px; /* Posiciona o botão esquerdo */
+    left: 10px; 
 }
 
 .scroll-button.right {
-    right: 10px; /* Posiciona o botão direito */
+    right: 10px;
 }
 
 .scroll-button:hover {
     background-color: rgba(0, 0, 0, 0.8);
-}
+} */
 
 .caixa-serv {
     flex: 0 0 auto; /* Impede que as caixas se ajustem ao tamanho do contêiner */
@@ -775,10 +776,10 @@ button:hover {
 }
 
 
-/* Rodapé */
+/*      FOOTER       */
+
 footer {
     background-color: var(--escuro);
-    
     padding: 20px 0 0 0;
 }
 
@@ -786,6 +787,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
+    
 }
 
 .footer-logo img {
@@ -794,7 +796,10 @@ footer {
 }
 
 .info-section, .contact-section {
+    display: block;
+    border: solid 1px white;
     text-align: left;
+    
     color: var(--claro)
 }
 
@@ -803,6 +808,11 @@ footer {
     font-family: var(--font2);
     margin-top: 10px;
     color: var(--claro);
+}
+
+.info-section a {
+    color: var(--claro);
+    text-decoration: none;
 }
 
 .footer-container  h2 {
@@ -814,6 +824,7 @@ footer {
     font-size: 18px;
     margin-top: 10px;
     color: var(--claro);
+    text-align: left;
 }
 
 .contato-footer-icone {
