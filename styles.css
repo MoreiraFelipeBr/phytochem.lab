@@ -785,8 +785,8 @@ footer {
 
 .footer-container {
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
+    /* justify-content: space-around;
+    align-items: flex-start; */
     
 }
 
@@ -797,7 +797,7 @@ footer {
 
 .info-section, .contact-section {
     display: block;
-    border: solid 1px white;
+    
     text-align: left;
     
     color: var(--claro)

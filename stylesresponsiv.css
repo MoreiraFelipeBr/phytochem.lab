@@ -434,20 +434,34 @@
         /*      Ajustes no footer        */
 
         .footer {
-            justify-content:space-between;
-            align-items: center;
-            padding: 10px;
         }
+
+        .footer-container {
+         
+        }
+
         .footer-logo img {
-            width: 150px; 
+            width: 120px; 
+        }
+
+        .info-section, .contact-section {
+            width: 70%;
+            margin: 0;
+            padding: 0;
         }
 
         .info-section p, .contact-section p {
             font-size: 0.8rem; 
+            
         }
 
         .social-icons img {
             width: 30px; /* Reduz o tamanho dos ícones sociais */
+        }
+
+        .contato-footer-texto{
+            font-size: 0.7rem;            
+            margin: 0px;
         }
 
         #contatosTop {
@@ -459,6 +473,11 @@
             color: black;
             font-size: 1.3rem;    
             padding: 5px;
+        }
+
+        .footer-bottom p {
+            font-size: 0.8em;
+            color: var(--claro);
         }
     
 
