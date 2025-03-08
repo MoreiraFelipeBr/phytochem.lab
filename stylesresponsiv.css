@@ -139,7 +139,7 @@
 
     /* Ajustes na seção de serviços */
     .corpodasecao {
-        gap: 10px; /* Reduz o espaçamento entre as caixas */
+        /*gap: 10px;  Reduz o espaçamento entre as caixas */
         padding: 5px;
     }
 
@@ -256,7 +256,7 @@
 
     .inicio { 
         /*position:static;*/
-        top: 0px;
+        
         margin: 0;
         height: var(--vh);
         display: block;
@@ -285,7 +285,7 @@
     }
     #section-video {
         margin-top: 50px;
-        height: var(--vh);
+        height: calc(var(--vh) - 50px);
         object-position: left
         
      }
@@ -388,27 +388,33 @@
         font-weight: bold;
         transition: color 0.3s ease;
     }
-        /* Ajustes na seção de serviços */
+      
+    
+    /* Ajustes na seção de serviços */
+
+    .sobre1-container1{
+        margin: 10px auto;
+        padding: 0px;
+    }
         
-        .corpodasecao {
+    .corpodasecao {
             display: flex;
             flex-wrap:wrap;
-            
             justify-content: center;
             gap: 10px; 
-            padding: 0px;
-            width: 90vw; 
+            padding: 20px;
+            width: 100%; 
             margin: 0 auto; 
-            
-        }
-        .caixa-serv {
+            }
+
+    .caixa-serv {
             width: 420px;
             min-height:300px ;
             height: 350px;
             max-width: 90vw;
-        }
+    }
 
-        .img-serv {
+       .img-serv {
             height: 160px; 
         }
 

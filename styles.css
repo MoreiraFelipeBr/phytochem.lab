@@ -560,6 +560,7 @@ header nav ul li a {
 #servicos{
     margin-bottom: 30px;
     display: block;
+    background-color: whitesmoke;
 }
 
 .width-100 {
@@ -580,7 +581,7 @@ header nav ul li a {
     align-items: center;
     padding: 0;
     margin: 0;
-    height: 15vh;
+    height: 10vh;
     box-sizing: border-box;
     /*background: url('img/backgroundprovisorio.png') no-repeat center center fixed, 
     linear-gradient(130deg,  var(--primary-lilasclaro) 5%, var(--primary-azul) 50%, var(--secundary-verde) 95%);;
@@ -603,9 +604,10 @@ header nav ul li a {
     align-items:center;
     
     gap: 10px; 
-    padding: 10px;
-    width: 90%; 
+     padding: 20px; 
+    width: 100%; 
     margin: 0 auto; 
+    background-color: whitesmoke;
     
 }
 
