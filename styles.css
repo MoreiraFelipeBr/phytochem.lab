@@ -269,6 +269,7 @@ header nav ul li a {
     top: 10px;
     margin: 0;
     height: var(--vh);
+    min-height: 420px;
     display: block;
     align-items: center;
     justify-content: center;
@@ -284,6 +285,7 @@ header nav ul li a {
     left: 0;
     width: 100%;
     height:  var(--vh);
+    min-height: 420px;
     object-fit: cover;
     z-index: -1; 
     margin: 0;

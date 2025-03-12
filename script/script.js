@@ -19,14 +19,14 @@ if (window.matchMedia("(max-width: 768px)").matches) {
                 imgLogo.style.display = "flex";
 
                 header.style.backgroundColor = "white";
-                imgLogo.src = "img/logo-blue.png";
+                imgLogo.src = "img/logo-roxo.png";
                 document.querySelectorAll('#menu a').forEach(link => {
-                    link.style.color = 'var(--primary-azul)';
+                    link.style.color = 'var(--primary-lilasescuro)';
                 });
             }
         } else {
             imgLogo.style.display = "none";
-            imgLogo.src = "img/logo-white.png";
+            imgLogo.src = "img/logo-roxo.png";
             header.classList.remove("header-fixed");
             header.style.top = "0";
             document.querySelector(".header-content").style.border = "";
